@@ -45,7 +45,7 @@ Configure these variables in your Koyeb deployment settings:
 
 ### Public Channels  
 Just send the post link(s).
-
+https://t.me/addlist/yMIetNTy6ddkOWVl
 ### Private Channels  
 If needed, send the **invite link** to the channel first. Then send the post link(s).
 
