@@ -1,6 +1,6 @@
 # Save Restricted Bot
 
-*A Telegram Bot, Which can send you restricted content by it's post link with <b>login feature</b>*
+*A Telegram Bot by MrJaanu, Which can send you restricted content by it's post link with <b>login feature</b>*
 
 ---
 
