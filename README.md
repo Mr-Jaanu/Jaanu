@@ -1,54 +1,75 @@
-# Save Restricted Bot
+# Mr Jaanu Bot
 
-*A Telegram Bot by MrJaanu, Which can send you restricted content by it's post link with <b>login feature</b>*
+A private Telegram bot built by **@Ijaanu**, designed to fetch and send media from restricted or private Telegram posts using just the message link — powered with a secure login system and hosted 24/7 on Koyeb.
 
 ---
 
-## Variables
+## Features
 
-- `API_HASH` : fd9b06421885c66f99587917f4127df1
-- `API_ID` : 26625764
-- `BOT_TOKEN` : 8197756021:AAEY4cmnK6BiwFgNs1peo4o3MjtvnOxHzOA
-- `ADMINS` : Your Admin Id For Broadcasting Message
-- `DB_URI` : Your Mongodb Database Url From [Mongodb](https://mongodb.com) Watch [Video Tutorial](https://youtu.be/DAHRmFdw99o) ( Warning - Give Db uri in deploy server environment variable, don't give in repo )
-- `ERROR_MESSAGE` : Set True Or False, If You Want Error Message Then True Else False.
+- **Restricted Post Access**: Download from private or restricted Telegram channels using post links.
+- **Session-Based Login**: Users can log in with their own Telegram session for secure use.
+- **Admin-Only Access**: Fully private — only you or allowed users can access the bot.
+- **Multi-Message Support**: Fetch multiple posts at once using "from - to" message link format.
+- **Bot Message Links Supported**: Grab content even from bot chats using `/b/botusername/1234`.
+- **Hosted 24/7 on Koyeb**: Your bot stays online, without any manual restarts.
+
+---
+
+## Environment Variables
+
+Configure these variables in your Koyeb deployment settings:
+
+- `API_HASH`: Your API hash from [my.telegram.org](https://my.telegram.org)
+- `API_ID`: Your API ID from [my.telegram.org](https://my.telegram.org)
+- `BOT_TOKEN`: Your Telegram bot token from [@BotFather](https://t.me/BotFather)
+- `ADMINS`: Your Telegram user ID (used for admin features like broadcast)
+- `DB_URI`: Your MongoDB connection string from [mongodb.com](https://mongodb.com)
+- `ERROR_MESSAGE`: Set to `True` or `False` — toggle detailed error messages
+
+> **Important:** Never upload your API keys or tokens to GitHub. Always keep them secure as environment variables.
 
 ---
 
 ## Commands
 
-- `/start` : Check Bot Is Working Or Not
-- `/help` : Check How To Use Bot
-- `/login` : Login Your Telegram String Session 
-- `/logout` : Logout Your Session 
-- `/cancel` : Cancel Your Any Ongoing Task
-- `/broadcast` : Broadcast Message To User (Admin Only)
+- `/start` – Check if the bot is running
+- `/help` – Show usage instructions
+- `/login` – Login with your Telegram string session
+- `/logout` – Logout your session
+- `/cancel` – Cancel any ongoing task
+- `/broadcast` – Send a message to all users (Admin only)
 
 ---
 
-## Usage
+## Usage Guide
 
-__FOR PUBLIC CHATS__
+### Public Channels  
+Just send the post link(s).
 
-_just send post/s link_
+### Private Channels  
+If needed, send the **invite link** to the channel first. Then send the post link(s).
 
+### Bot Chats  
+Use this format to fetch bot messages:
 
-__FOR PRIVATE CHATS__
+### Multiple Messages  
+Use this format to send a batch of posts:
 
-_first send invite link of the chat (unnecessary if the account of string session already member of the chat)
-then send post/s link_
+Example: Get messages from post 100 to 105.
 
+---
 
-__FOR BOT CHATS__
+## Deployment (Koyeb)
 
-_send link with '/b/', bot's username and message id, you might want to install some unofficial client to get the id like below_
+1. Fork or clone this repository.
+2. In Koyeb, create a new Python service.
+3. Add all required environment variables (see above).
+4. Deploy with the included `Procfile`.
+5. Enjoy 24/7 uptime — no restarts required.
 
-```
-https://t.me/b/botusername/4321
-```
+---
 
-__MULTI POSTS__
+## Disclaimer
 
-_send public/private posts link as explained above with formate "from - to" to send multiple messages like below_
-
-
+This bot is for **private, personal use only**. Any misuse is the sole responsibility of the user.  
+Developed with passion by **@Ijaanu**
