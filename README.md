@@ -51,7 +51,7 @@ If needed, send the **invite link** to the channel first. Then send the post lin
 
 ### Bot Chats  
 Use this format to fetch bot messages:
-
+https://t.me/b/botusername/1234
 ### Multiple Messages  
 Use this format to send a batch of posts:
 
